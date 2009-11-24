@@ -6,6 +6,7 @@ module Codebreaker
 
     def start
       @messenger.puts "Welcome to Codebreaker!"
+      @messenger.puts "Enter guess:"
     end
   end
 end
