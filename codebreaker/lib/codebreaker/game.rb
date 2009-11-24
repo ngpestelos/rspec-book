@@ -4,7 +4,7 @@ module Codebreaker
       @messenger = messenger
     end
 
-    def start
+    def start(code)
       @messenger.puts "Welcome to Codebreaker!"
       @messenger.puts "Enter guess:"
     end

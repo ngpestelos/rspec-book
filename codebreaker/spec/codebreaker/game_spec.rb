@@ -10,12 +10,12 @@ module Codebreaker
 
       it "should send a welcome message" do
         @messenger.should_receive(:puts).with("Welcome to Codebreaker!")
-        @game.start
+        @game.start(%w[r c g y])
       end
 
       it "should prompt for the first guess" do
         @messenger.should_receive(:puts).with("Enter guess:")
-        @game.start
+        @game.start(%w[r c g y])
       end
     end
   end
