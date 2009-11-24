@@ -4,7 +4,7 @@ end
 When /^I start a new game$/ do
   @messenger = StringIO.new
   game = Codebreaker::Game.new(@messenger)
-  game.start
+  game.start(%w[r g y c])
 end
 
 Then /^I should see "([^\"]*)"$/ do |message|
