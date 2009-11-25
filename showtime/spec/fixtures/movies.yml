@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  showtime_date: 2009-11-25
+  showtime_time: 2009-11-25 21:18:20
+
+two:
+  showtime_date: 2009-11-25
+  showtime_time: 2009-11-25 21:18:20
