@@ -30,5 +30,17 @@ module Codebreaker
         game.guess(%w[r g y c])
       end
     end
+
+    context "with all 4 colors correct and 2 in the correct places" do
+      it "should mark the guess with bbww" do
+        messenger = mock("messenger").as_null_object
+        game = Game.new(messenger)
+        game.start(%w[r g y c])
+
+        messenger.should_receive(:puts).with("bbww")
+
+        game.guess(%w[r g c y])
+      end
+    end
   end
 end
