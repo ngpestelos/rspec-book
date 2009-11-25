@@ -5,7 +5,18 @@ module Codebreaker
     before(:each) do
       @messenger = mock("messenger").as_null_object
       @game = Game.new(@messenger)
-    end      
+    end
+
+    context "with duplicates in the guess that match a peg in the code" do
+      context "by color and position" do
+        it "should add a single b to the mark" do
+          pending()
+          @game.start(%w[r y g c])
+          @messenger.should_receive(:puts).with("bbb")
+          @game.guess(%w[r y g g])
+        end
+      end
+    end 
 
     context "starting up" do
       it "should send a welcome message" do
