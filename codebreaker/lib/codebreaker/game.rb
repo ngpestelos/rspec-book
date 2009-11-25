@@ -8,5 +8,9 @@ module Codebreaker
       @messenger.puts "Welcome to Codebreaker!"
       @messenger.puts "Enter guess:"
     end
+
+    def guess(guess)
+      @messenger.puts "bbbb"
+    end
   end
 end
