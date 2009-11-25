@@ -11,7 +11,7 @@ module Codebreaker
     end
 
     def guess(guess)
-      result = ""
+      result = []
       guess.each_with_index do |peg, index|
         if @code[index] == peg
           result << "b"
@@ -19,7 +19,7 @@ module Codebreaker
           result << "w"
         end
       end
-      @messenger.puts result
+      @messenger.puts result.sort.join
     end
   end
 end
