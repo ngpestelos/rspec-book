@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091126053216) do
+ActiveRecord::Schema.define(:version => 20091126235403) do
 
   create_table "genres", :force => true do |t|
     t.string   "name"
@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20091126053216) do
     t.time     "showtime_time"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
+    t.integer  "release_year"
   end
 
 end
