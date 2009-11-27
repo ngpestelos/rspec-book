@@ -1,6 +1,6 @@
 class CreateGenresMovies < ActiveRecord::Migration
   def self.up
-    create_table :genres_movies, :force => true do |t|
+    create_table :genres_movies, :force => true, :id => false do |t|
       t.integer :genre_id
       t.integer :movie_id
       t.timestamps
